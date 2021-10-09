@@ -1,0 +1,33 @@
+﻿<Window x:Class="KR.WindowAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KR"
+        mc:Ignorable="d"
+        Title="WindowAdd" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <UniformGrid Columns="2">
+            <TextBlock>Клиент:</TextBlock>
+            <ComboBox Name="CmbCustomer" SelectedItem="{Binding Customer1}" DisplayMemberPath="name"></ComboBox>
+            <TextBlock>Уголок:</TextBlock>
+            <ComboBox Name="CmbAngle" SelectedItem="{Binding Angle1}" DisplayMemberPath="angle1"></ComboBox>
+            <TextBlock>Цвет:</TextBlock>
+            <ComboBox Name="CmbColour" SelectedItem="{Binding Colour1}" DisplayMemberPath="colour1"></ComboBox>
+            <TextBlock>Размер:</TextBlock>
+            <ComboBox Name="CmbSize" SelectedItem="{Binding Size1}" DisplayMemberPath="size1"></ComboBox>
+            <TextBlock>Цена:</TextBlock>
+            <TextBox Text="{Binding price}"></TextBox>
+            <TextBlock>Фото:</TextBlock>
+            <Image Source="{Binding photo}" Name="photos"></Image>
+            <TextBlock>Дата:</TextBlock>
+                <DatePicker SelectedDate="{Binding date}"></DatePicker>
+        </UniformGrid>
+        <Button x:Name="BtnSave" Grid.Row="1" Click="BtnSave_Click">Save</Button>
+
+    </Grid>
+</Window>

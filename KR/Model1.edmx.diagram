@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="868a77c1d1424947a6a9f55d06f394fa" Name="Diagram1">
+        <EntityTypeShape EntityType="PR10ROMModel.Angle" Width="1.5" PointX="4" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PR10ROMModel.Colour" Width="1.5" PointX="6.375" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PR10ROMModel.Customer" Width="1.5" PointX="2" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PR10ROMModel.Order" Width="1.5" PointX="10.125" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PR10ROMModel.Size" Width="1.5" PointX="4.125" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PR10ROMModel.sysdiagrams" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="PR10ROMModel.FK_Order_Angle" ManuallyRouted="false" />
+        <AssociationConnector Association="PR10ROMModel.FK_Order_Colour" ManuallyRouted="false" />
+        <AssociationConnector Association="PR10ROMModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PR10ROMModel.FK_Order_Size" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
